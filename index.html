@@ -96,6 +96,20 @@
                 font-size: 1.3em;
             }
         }
+
+        /* About Me section styling */
+        .about-me-content {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between the image and text */
+        }
+
+        .about-me-image {
+            max-width: 150px; /* Adjust as needed */
+            height: auto;
+            border-radius: 50%; /* Optional: makes the image circular */
+            border: 3px solid #ff6b81; /* Optional: border color to match the header */
+        }
         
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -106,7 +120,6 @@
     <header>
         <div class="container">
             <h1>Laura Vitali <span class="emoji">✨</span></h1>
-            
         </div>
     </header>
 
@@ -114,10 +127,10 @@
     <section>
         <div class="container">
             <h2>About me <span class="emoji">💁‍♀️</span></h2>
-            <!-- Image inserted below the header text with resized dimensions -->
-            <img src="image07.jpg" alt="Laura Vitali" style="max-width: 150px; height: auto; margin-top: 20px;">
-        
-            <p>Hi there! 😊 I’m Laura, a content designer by day and a blogger by night. Driven by curiosity, I joined a Web Development Bootcamp to uncover the magic behind my WordPress blog. Now, I’m applying those skills to create my own résumé as part of our coursework. Enjoy!</p>
+            <div class="about-me-content">
+                <img src="image07.jpg" alt="Laura Vitali" class="about-me-image">
+                <p>Hi there! 😊 I’m Laura, a content designer by day and a blogger by night. Driven by curiosity, I joined a Web Development Bootcamp to uncover the magic behind my WordPress blog. Now, I’m applying those skills to create my own résumé as part of our coursework. Enjoy!</p>
+            </div>
         </div>
     </section>
 
