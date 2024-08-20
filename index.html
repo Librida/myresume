@@ -1,54 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My résumé</title>
+    <title>Laura's Portfolio</title>
+    <style>
+        /* Main body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f1e3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff6b81;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Main container styling */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Section styling */
+        section {
+            margin: 20px 0;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section headers styling */
+        h2 {
+            color: #ff4757;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Job title styling */
+        .job-title {
+            color: #ff6348;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Company and date styling */
+        .company, .dates {
+            color: #555;
+        }
+
+        /* List item styling */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        /* Adding spacing between list items */
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Adding a small touch of personality */
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        /* Links styling */
+        a {
+            color: #ff6b81;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: Arial, sans-serif; color: #333; background-color: #fce4ec; margin: 0; padding: 0;">
-    <div style="width: 80%; margin: auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h1 style="text-align: center; color: #d81b60;">Here's my résumé, besties! ✨</h1>
-        <p style="text-align: center;">
-            <img src="./image0 (7).jpeg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 8px; border: 2px solid #d81b60;">
-        </p>
-        <hr style="border: 0; border-top: 2px solid #d81b60; margin: 20px 0;">
-        
-        <h2 style="color: #c2185b;">About me</h2>
-        <p>Hello reader 😊 I am Laura, professional writer by day, blogging enthusiast by night! Being a deeply curious person, I've started to ask myself: "how does my WordPress blog work, what's the magic behind it?". So, I've joined a Web Development Bootcamp and now I'm here, coding this résumé as it's part of our homework. Enjoy!</p>
-        
-        <h3 style="color: #c2185b;">Education</h3>
-        <ul style="padding-left: 20px;">
-            <li>Master's degree in Philosophical Sciences - Unimi, 109/110 - (2021) 🎓</li>
-            <li>Undergraduate degree in Philosophy - Unimi, 104/110 - (2017) 🎓</li>
-        </ul>
-        
-        <h3 style="color: #c2185b;">Professional experience</h3>
-        <ul style="padding-left: 20px;">
-            <li>Product Content Specialist at Factorial (Mar 2024 - Ongoing) 💻</li>
-            <li>Freelance Social Media Manager (Oct 2023 - Ongoing) #️⃣</li>
-            <li>Blogger at <a href="https://librida.wordpress.com/" style="color: #d81b60;">Librida.com</a> (Apr 2023 - Ongoing) 🧜‍♀️</li>
-            <li>Community Manager at The Knot Worldwide/Matrimonio.com (Oct 2022 - Mar 2023) 👰‍♀️</li>
-            <li>Web Content Writer at Emagister (Mar 2022 - Oct 2022) 📚</li>
-            <li>Freelance Journalist (Jul 2015 - Jul 2017) 📝</li>
-            <li>Emoji Expert - They all make sense 💁🏻‍♀️</li>
-        </ul>
-        
-        <h3 style="color: #c2185b;">Skills</h3>
-        <ul style="padding-left: 20px;">
-            <li>Writing, editing, proofreading 📃</li>
-            <li>Reading as fast as Speedy Gonzales 🌠</li>
-            <li>Creating various types of content: UX, marketing, social media, blog posts 🦸‍♀️</li>
-            <li>Extremely creative, curious, and pretty 🎀</li>
-        </ul>
-        
-        <h3 style="color: #c2185b;">Languages</h3>
-        <ul style="padding-left: 20px;">
-            <li>Italian - C2 🍕</li>
-            <li>Spanish - C1 💃</li>
-            <li>English - C1 🍻</li>
-            <li>French - B1 🥐</li>
-            <li>Portuguese - A2 🍷</li>
-        </ul>
-    </div>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <h1>Laura' Vitali <span class="emoji">✨</span></h1>
+        </div>
+    </header>
+
+    <!-- About Me section -->
+    <section>
+        <div class="container">
+            <h2>About me <span class="emoji">💁‍♀️</span></h2>
+            <p>Hi there! 😊 I’m Laura, a content designer by day and a blogger by night. Driven by curiosity, I joined a Web Development Bootcamp to uncover the magic behind my WordPress blog. Now, I’m applying those skills to create my own résumé as part of our coursework. Enjoy!</p>
+        </div>
+    </section>
+
+    <!-- Professional Experience section -->
+    <section>
+        <div class="container">
+            <h2>Professional experience <span class="emoji">💻</span></h2>
+
+            <div>
+                <h3 class="job-title">Content Designer / UX Writer</h3>
+                <p class="company">Factorial</p>
+                <p class="dates">March 2024 - Ongoing</p>
+                <ul>
+                    <li>English and Italian language specialist</li>
+                    <li>Writing UX copies for the product</li>
+                    <li>Creating micro-copies</li>
+                    <li>Designing compelling content</li>
+                    <li>Translating and localizing content</li>
+                    <li>Working closely with design, development, and marketing teams</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Social Media Manager</h3>
+                <p class="company">Freelance</p>
+                <p class="dates">October 2023 - Ongoing</p>
+                <ul>
+                    <li>Developing social media strategies</li>
+                    <li>Creating and curating engaging content</li>
+                    <li>Analyzing metrics and performance</li>
+                    <li>Managing online community engagement</li>
+                    <li>Executing advertising campaigns</li>
+                    <li>Monitoring trends and best practices</li>
+                    <li>Building influencer relationships</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Blogger</h3>
+                <p class="company">Librida</p>
+                <p class="dates">April 2023 - Ongoing</p>
+                <ul>
+                    <li>Developed and launched a WordPress blog</li>
+                    <li>Managing the editorial process, including researching, writing, and publishing high-quality content</li>
+                    <li>Implementing advanced SEO strategies to optimize content for search engines</li>
+                    <li>Monitoring performance metrics</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Community Manager</h3>
+                <p class="company">The Knot Worldwide</p>
+                <p class="dates">October 2022 - March 2023</p>
+                <ul>
+                    <li>Creating and publishing engaging posts and articles for Matrimonio.com</li>
+                    <li>Writing SEO-optimized content</li>
+                    <li>Driving community engagement and user activation</li>
+                    <li>Generating leads</li>
+                    <li>Assisting in the production of content for YouTube and TikTok</li>
+                    <li>Planning and managing the editorial calendar</li>
+                    <li>Enhancing marketing conversion</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Web Content Writer</h3>
+                <p class="company">Emagister</p>
+                <p class="dates">March 2022 - October 2022</p>
+                <ul>
+                    <li>Writing and managing content for Emagister.com, Spain’s leading search engine for educational programs</li>
+                    <li>Responsible for the European market (UK, France, DACH)</li>
+                    <li>Crafting SEO-optimized content</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Freelance Journalist</h3>
+                <p class="company">Freelance</p>
+                <p class="dates">July 2015 - July 2017</p>
+                <ul>
+                    <li>Writing articles on various topics</li>
+                    <li>Conducting thorough interviews</li>
+                    <li>Adapting writing style and content</li>
+                    <li>Collaborating with editors and other journalists</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section>
+        <div class="container">
+            <h2>Education <span class="emoji">👩‍🎓</span></h2>
+
+            <div>
+                <h3 class="job-title">Master’s Degree in Philosophical Sciences</h3>
+                <p class="company">University of Milan</p>
+                <p class="dates">September 2018 - December 2021</p>
+                <p>Grade: 109/110</p>
+                <p>Empirical dissertation in advertising communication, investigating the cognitive models underlying Femvertising (female empowerment advertising).</p>
+            </div>
+
+            <div>
+                <h3 class="job-title">Undergraduate Degree in Philosophy</h3>
+                <p class="company">University of Milan</p>
+                <p class="dates">September 2014 - December 2017</p>
+                <p>Grade: 104/110</p>
+            </div>
+
+            <div>
+                <h3 class="job-title">Web Development Bootcamp</h3>
+                <p class="company">The App Brewery</p>
+                <p class="dates">August 2024 - October 2024</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>PostgreSQL</li>
+                    <li>Web3</li>
+                    <li>DApps</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">220-Hour Intensive Course</h3>
+                <p class="company">Palestre Digitali</p>
+                <p class="dates">June 2021 - July 2021</p>
+                <p>220-hour lectures, interactive workshops, and seminars on copywriting, content creation, corporate communication, SEO, SEA, programmatic advertising, neuromarketing, digital sustainability, data analysis, Google Analytics, digital storytelling, service design, UX/UI, AI/NLP.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Courses section -->
+    <section>
+        <div class="container">
+            <h2>Other courses <span class="emoji">📚</span></h2>
+
+            <div>
+                <h3 class="job-title">Search Engine Optimization (SEO)</h3>
+                <p class="company">University of California, Davis</p>
+                <p class="dates">August 2022</p>
+                <ul>
+                    <li>Understanding how search engines work and their evolution</li>
+                    <li>Examining SEO strategies to drive organized traffic to websites</li>
+                    <li>Avoiding penalties from search engine algorithms</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Content Strategy for Professionals: Engaging Audiences</h3>
+                <p class="company">Northwestern University</p>
+                <p class="dates">August 2022</p>
+                <ul>
+                    <li>Defining content strategy</li>
+                    <li>Understanding and effectively segmenting your audience</li>
+                    <li>Crafting a core creation concept</li>
+                    <li>Using content experiences to engage target audiences</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Transmedia Storytelling: Narrative Worlds, Emerging Technologies, and Global Audiences</h3>
+                <p class="company">UNSW</p>
+                <p class="dates">August 2022</p>
+                <ul>
+                    <li>Introduction to transmedia storytelling</li>
+                    <li>Building a storyworld</li>
+                    <li>Understanding transmedia audiences</li>
+                    <li>The transmedia user experience</li>
+                    <li>Using creative technologies</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">Viral Marketing and How to Craft Contagious Content</h3>
+                <p class="company">Wharton Online</p>
+                <p class="dates">January 2023 - February 2023</p>
+                <ul>
+                    <li>Examining the science behind making ideas stick</li>
+                    <li>Increasing influence and generating word of mouth</li>
+                    <li>Harnessing social networks to amplify products, ideas, and services</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="job-title">The Art of Visual Storytelling</h3>
+                <p class="company">University of Colorado Boulder</p>
+                <p class="dates">May 2023</p>
+                <ul>
+                    <li>Understanding video production workflow</li>
+                    <li>Structuring and writing visual stories</li>
+                    <li>Utilizing technology to enhance production</li>
+                    <li>Selecting the best shots for editing</li>
+                    <li>Fundamentals of non-linear editing</li>
+                    <li>Producing videos that meet professional standards</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages section -->
+    <section>
+        <div class="container">
+            <h2>Languages <span class="emoji">🌍</span></h2>
+            <ul>
+                <li><strong>Italian</strong> - Native</li>
+                <li><strong>English</strong> - Advanced</li>
+                <li><strong>Spanish</strong> - Advanced</li>
+                <li><strong>French</strong> - Intermediate</li>
+                <li><strong>Portuguese</strong> - Beginner</li>
+            </ul>
+        </div>
+    </section>
 </body>
+
 </html>
